@@ -1,0 +1,3 @@
+[submodule "kube-libsonnet-example/kube-libsonnet"]
+	path = kube-libsonnet-example/kube-libsonnet
+	url = https://github.com/bitnami-labs/kube-libsonnet

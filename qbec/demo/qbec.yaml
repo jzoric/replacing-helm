@@ -1,0 +1,22 @@
+apiVersion: qbec.io/v1alpha1
+kind: App
+metadata:
+  name: demo
+spec:
+  excludes:
+    - service-d
+  environments:
+    kind:
+      context: kind-example
+      defaultNamespace: default
+      # server: https://127.0.0.1:54972
+      includes:
+        - service-d
+    kind_1:
+      context: kind-example
+      defaultNamespace: dev
+      excludes:
+        - demo
+      includes:
+        - service-d
+  vars: {}
